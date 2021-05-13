@@ -76,6 +76,9 @@ void cal(const Arg *arg) {
 		y++;
 	}
 
+	//free up memory
+	free(cmdbuf);
+
 	/* close */
 	pclose(fp);
 }
